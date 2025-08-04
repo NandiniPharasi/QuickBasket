@@ -1,0 +1,48 @@
+div {
+    background-color: #f5f1ee;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    border-radius: 7px;
+    font-size: 1.3rem;
+}
+p {
+  color: #eee8e8ff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+table, td, tr {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 1px;
+    border-radius: 6px; 
+    padding: 5px;
+    font-size: 1.3rem;
+    color: #000000;
+}
+#displayTable {
+    width: 50%;
+    text-align: center;
+}
+#calculate {
+    margin-right: auto;
+    width : 50%;
+    border-radius : 5px; 
+    padding: 2px;
+}	 	  	  	 			  	   	 	
+h3 {
+    font-variant: small-caps;
+    font-family: Georgia;
+    color: #ff0000;
+    font-size: 30px;
+    margin-left: 3%;
+}
+thead {
+    background-color: #9fe1ea;
+}  
+input, button {
+    font-size: 1.3rem;
+}
+  

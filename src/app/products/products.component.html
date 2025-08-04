@@ -1,0 +1,153 @@
+<nav>
+  <ul>
+       <!-- Implement your code here -->
+       <li>
+          <a routerLink="/products" [queryParams]="{flag:1}" id="essentials">Essentials</a>
+          </li>
+          <li>
+          <a routerLink="/products" [queryParams]="{flag:2}" id="freshBaskets">Fresh Baskets</a>
+       </li>
+
+  </ul>
+</nav>
+
+<div *ngIf="flag==1">
+<!--Implement your code here for Essentials when flag==1 -->
+
+  <h3>Essentials</h3>
+  <table>
+      <tr>
+          <td> <label for="essentials1">Grains Basket - $50<br><p>(Toor dal: 500g,
+          Moong dal: 250g, Channa dal: 250g, Urad dal: 500g,<br> Rajma: 250g, Green Peas:250g)</p>
+          </label></td>
+          <td>
+              <!-- fill the code for input essentials1 -->
+         <input type="number" id="essentials1" name="essentials1" min="0" #essentials1>
+          </td>
+          <td>
+              <!-- fill the code for button ebtn1 -->
+              <button id="ebtn1" (click)="addItem('Grains Basket',essentials1.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="essentials2">Oil Package - $20 <br><p>(Gingelly Oil: 500g, Refined Sunflower Oil: 500g, Mustard Oil: 250g,
+          <br>Coconut Oil: 250g  )</p></label></td>
+          <td>
+              <!-- fill the code for input essentials2 -->
+          <input type="number" id="essentials2" name="essentials2" min="0" #essentials2>
+          </td>
+          <td>
+              <!-- fill the code for button ebtn2 -->
+              <button id="ebtn2" (click)="addItem('Oil Package',essentials2.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="essentials3">Condiments Pack - $25 <br><p>(Bay leaf, dried Basil, Green Cardamom, Cinnamon, Clove, Coriander,
+          <br> Cumin, dried Oregano, Paprika, Turmeric - Net Weight: 250g)</p></label></td>
+          <td>
+              <!-- fill the code for input essentials3 -->
+          <input type="number" id="essentials3" name="essentials3" min="0" #essentials3>
+          </td>
+          <td>
+              <!-- fill the code for button ebtn3 -->
+              <button id="ebtn3" (click)="addItem('Condiments Pack',essentials3.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="essentials4">Cake Cookery Plater - $29 <br><p>(All purpose flour: 300g, Egg: 4, Baking soda: 10g; Vanilla essence: 20ml,
+          <br> Powdered sugar: 200g, Butter: 50g, Milk: 200ml)</p></label></td>
+          <td>
+              <!-- fill the code for input essentials4 -->
+          <input type="number" id="essentials4" name="essentials4" min="0" #essentials4>
+          </td>
+          <td>
+              <!-- fill the code for button ebtn4 -->
+              <button id="ebtn4" (click)="addItem('Cake Cookery Plater',essentials4.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="essentials5">Pizza Cookery Plater - $30 <br><p>(All purpose flour: 200g, Tomato ketchup: 100ml, Tomato: 50g, Onion: 100g,
+          <br> Chilli flakes: 20g, Baking powder: 10g, Cheese: 100g, Capsicum: 50g,
+          <br> Oregano: 50g, Mozzarella: 50g)</p></label></td>
+          <td>
+              <!-- fill the code for input essentials5 -->
+          <input type="number" id="essentials5" name="essentials5" min="0" #essentials5>
+          </td>
+          <td>
+              <!-- fill the code for button ebtn5 -->
+              <button id="ebtn5" (click)="addItem('Pizza Cookery Plater',essentials5.value)">Add to Cart</button>
+          </td>
+      </tr>
+
+  </table>
+
+
+
+</div>
+
+<div *ngIf="flag==2">
+<!--Implement your code here for Fresh Basket when flag==2 -->
+
+  <h3>Fresh Baskets</h3>
+  <table>
+      <tr>
+          <td> <label for="fresh1">Vegetable Basket - $36 <br><p>(Potato: 250g, Tomato: 250g, Onion: 250g, Radish: 250g, Brinjal: 250g, <br>
+          Carrot: 250g, Bottle-gourd: 250g, Coconut: 1)</p></label></td>
+          <td>
+              <!-- fill the code for input fresh1 -->
+          <input type="number" id="fresh1" name="fresh1" min="0" #fresh1>
+          </td>
+          <td>
+              <!-- fill the code for button fbtn1 -->
+              <button id="fbtn1" (click)="addItem('Vegetable Basket',fresh1.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="fresh2">Fruit Basket - $35 <br><p>(Apple: 250g, Orange: 250g, Banana: 250g, Grapes: 250g, Mango: 250g, Papaya: 250g)</p></label></td>
+          <td>
+              <!-- fill the code for input fresh2 -->
+          <input type="number" id="fresh2" name="fresh2" min="0" #fresh2>
+          </td>
+          <td>
+              <!-- fill the code for button fbtn2 -->
+              <button id="fbtn2" (click)="addItem('Fruit Basket',fresh2.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="fresh3">Meat Pack - $28 <br><p>(Mutton Boneless: 200g, Goat Rib Chops: 100g, Chicken Boneless Cubes: 200g, <br>Chicken Drumsticks:2)</p></label></td>
+          <td>
+              <!-- fill the code for input fresh3 -->
+          <input type="number" id="fresh3" name="fresh3" min="0" #fresh3>
+          </td>
+          <td>
+              <!-- fill the code for button fbtn3 -->
+              <button id="fbtn3" (click)="addItem('Meat Pack',fresh3.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="fresh4">Fish Pack - $31 <br><p>(Seer Steaks: 300g, Basa Fillet: 250g, Salmon Steaks:250g)</p></label></td>
+          <td>
+              <!-- fill the code for input fresh4 -->
+          <input type="number" id="fresh4" name="fresh4" min="0" #fresh4>
+          </td>
+          <td>
+              <!-- fill the code for button fbtn4 -->
+              <button id="fbtn4" (click)="addItem('Fish Pack',fresh4.value)">Add to Cart</button>
+          </td>
+      </tr>
+      <tr>
+          <td> <label for="fresh5">Dairy and Eggs Combo - $15  <br><p>(Milk: 500ml, Sandwich Bread Pack: 1, Egg: 5, Cheese: 100g, Butter: 100g)</p></label></td>
+          <td>
+              <!-- fill the code for input fresh5 -->
+          <input type="number" id="fresh5" name="fresh5" min="0" #fresh5>
+          </td>
+          <td>
+              <!-- fill the code for button fbtn5 -->
+              <button id="fbtn5" (click)="addItem('Dairy and Eggs Combo',fresh5.value)">Add to Cart</button>
+          </td>
+      </tr>
+  </table>
+
+
+
+</div>

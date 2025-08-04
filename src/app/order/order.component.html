@@ -1,0 +1,44 @@
+<div>
+  <!-- Implement your code here for Order details -->
+  <!--router to order page-->
+  <table>
+      <tr>
+          <td>
+              <label for="customerName">Customer Name: </label>
+              <input type="text" id="customerName" name="customerName" [(ngModel)]="customerName">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <label for="phoneNumber">Phone Number: </label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" [(ngModel)]="phoneNumber">
+          </td>
+      </tr>
+      <tr>
+          <!-- <td> -->
+          <button id="calculate" type="submit" (click)="calculateBill()">Calculate Bill</button>
+          <!-- </td> -->
+      </tr>
+  </table>
+  <br><br>
+  <!-- Implement your code here for displayTable -->
+  <table id="displayTable">
+      <thead>
+          <td>Product Name</td>
+          <td>Quantity</td>
+      </thead>
+      <tbody *ngFor="let i of order">
+          <tr>
+              <td>{{i.productName}}</td>
+              <td>{{i.quantity}}</td>
+          </tr>
+      </tbody>
+  </table>
+
+
+</div>
+<p>
+  <!-- Fill here to display status & error message-->
+  {{status}}
+  {{error}}
+</p>
